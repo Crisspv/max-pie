@@ -1,0 +1,90 @@
+[
+  {
+    "id": 1,
+    "name": "Podología Clínica",
+    "slug": "podologia-clinica",
+    "shortDescription": "Tratamiento integral para el cuidado de tus pies con tecnología de vanguardia.",
+    "description": "Nuestro servicio de podología clínica incluye evaluación completa, corte y limpieza profesional de uñas, eliminación de callosidades, tratamiento de grietas y cuidado preventivo. Utilizamos instrumental esterilizado y técnicas de última generación para garantizar tu bienestar.",
+    "price": 350,
+    "duration": "45 min",
+    "icon": "foot-prints",
+    "featured": true
+  },
+  {
+    "id": 2,
+    "name": "Uñas Encarnadas",
+    "slug": "unas-encarnadas",
+    "shortDescription": "Corrección profesional e indolora de uñas encarnadas.",
+    "description": "Tratamiento especializado para la onicocriptosis (uñas encarnadas). Realizamos corrección mediante técnicas mínimamente invasivas, con aplicación de órtesis ungueal para prevenir recurrencia. Incluye seguimiento post-tratamiento.",
+    "price": 500,
+    "duration": "60 min",
+    "icon": "shield-check",
+    "featured": true
+  },
+  {
+    "id": 3,
+    "name": "Tratamiento de Hongos",
+    "slug": "tratamiento-hongos",
+    "shortDescription": "Eliminación efectiva de hongos en uñas y piel con tratamiento fungicida.",
+    "description": "Diagnóstico y tratamiento de onicomicosis y micosis cutánea. Aplicamos fungicidas especializados, láser terapéutico y te brindamos un plan de cuidado personalizado para eliminar la infección de raíz.",
+    "price": 450,
+    "duration": "50 min",
+    "icon": "sparkles",
+    "featured": true
+  },
+  {
+    "id": 4,
+    "name": "Plantillas Personalizadas",
+    "slug": "plantillas-personalizadas",
+    "shortDescription": "Plantillas ortopédicas hechas a la medida para corregir y prevenir.",
+    "description": "Fabricamos plantillas a medida utilizando tecnología de escaneo digital del pie. Ideales para corregir problemas de pisada, aliviar dolor en rodillas y espalda, y mejorar tu rendimiento deportivo. Incluye estudio biomecánico completo.",
+    "price": 1200,
+    "duration": "90 min",
+    "icon": "layers",
+    "featured": true
+  },
+  {
+    "id": 5,
+    "name": "Pie Diabético",
+    "slug": "pie-diabetico",
+    "shortDescription": "Cuidado especializado y preventivo para pacientes con diabetes.",
+    "description": "Programa integral de atención para pie diabético que incluye evaluación vascular, neurológica y biomecánica. Tratamiento preventivo de úlceras, cuidado de uñas y piel, y educación para el autocuidado. Asistir mensualmente previene complicaciones graves.",
+    "price": 400,
+    "duration": "60 min",
+    "icon": "heart-pulse",
+    "featured": false
+  },
+  {
+    "id": 6,
+    "name": "Callosidades y Ojo de Pescado",
+    "slug": "callosidades",
+    "shortDescription": "Eliminación profesional de callos, durezas y verrugas plantares.",
+    "description": "Eliminación indolora de hiperqueratosis (callosidades), helomas y verrugas plantares (ojo de pescado). Utilizamos bisturí especializado y tratamientos tópicos para eliminar las lesiones y prevenir su reaparición.",
+    "price": 350,
+    "duration": "45 min",
+    "icon": "circle-dot",
+    "featured": false
+  },
+  {
+    "id": 7,
+    "name": "Reflexología Podal",
+    "slug": "reflexologia",
+    "shortDescription": "Masaje terapéutico que estimula puntos reflejos del pie.",
+    "description": "Técnica milenaria de masaje que actúa sobre los puntos reflejos de los pies, conectados con órganos y sistemas del cuerpo. Ideal para reducir estrés, mejorar la circulación y promover el equilibrio general del organismo.",
+    "price": 400,
+    "duration": "50 min",
+    "icon": "hand",
+    "featured": false
+  },
+  {
+    "id": 8,
+    "name": "Estudio Biomecánico",
+    "slug": "estudio-biomecanico",
+    "shortDescription": "Análisis completo de tu pisada y estructura del pie.",
+    "description": "Estudio profesional de la biomecánica del pie utilizando plataforma de presiones y análisis de marcha. Detectamos alteraciones en la pisada, desequilibrios musculares y proponemos soluciones personalizadas incluyendo plantillas y ejercicios correctivos.",
+    "price": 800,
+    "duration": "75 min",
+    "icon": "scan",
+    "featured": false
+  }
+]

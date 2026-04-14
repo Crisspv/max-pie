@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "name": "Rubencholas",
+    "rating": 5,
+    "comment": "Muy buena atención. 100% recomendado.",
+    "date": "2025-06-15",
+    "service": "Podología Clínica"
+  },
+  {
+    "id": 2,
+    "name": "María García L.",
+    "rating": 5,
+    "comment": "Excelente servicio, el doctor es muy profesional y cuidadoso. Mis pies quedaron como nuevos. Las plantillas personalizadas me cambiaron la vida.",
+    "date": "2025-04-20",
+    "service": "Plantillas Personalizadas"
+  },
+  {
+    "id": 3,
+    "name": "Carlos Hernández",
+    "rating": 5,
+    "comment": "Tenía un problema de uñas encarnadas que nadie me podía resolver. En MAX PIE me lo solucionaron en una sola sesión. Súper recomendados.",
+    "date": "2025-03-10",
+    "service": "Uñas Encarnadas"
+  },
+  {
+    "id": 4,
+    "name": "Ana Sofía Ramírez",
+    "rating": 5,
+    "comment": "Mi mamá es diabética y la llevan atendiendo ya 2 años. Siempre con mucho cuidado y profesionalismo. Es un lugar de confianza.",
+    "date": "2025-05-02",
+    "service": "Pie Diabético"
+  },
+  {
+    "id": 5,
+    "name": "Jorge Medina V.",
+    "rating": 5,
+    "comment": "Fui por un ojo de pescado que me molestaba mucho al caminar. El tratamiento fue rápido y ya no me ha vuelto a salir. Muy agradecido.",
+    "date": "2025-02-28",
+    "service": "Callosidades y Ojo de Pescado"
+  }
+]
