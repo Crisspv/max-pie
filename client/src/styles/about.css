@@ -1,0 +1,212 @@
+/* ---- Banner / Promo Section ---- */
+.banner {
+  position: relative;
+  padding: var(--space-5xl) 0;
+  overflow: hidden;
+}
+
+.banner--dark {
+  background: var(--color-primary);
+  color: white;
+}
+
+.banner--accent {
+  background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-accent-dark) 100%);
+  color: white;
+}
+
+.banner--gold {
+  background: linear-gradient(135deg, var(--color-gold) 0%, #A8842E 100%);
+  color: white;
+}
+
+.banner__bg-pattern {
+  position: absolute;
+  inset: 0;
+  opacity: 0.05;
+  background-image: 
+    radial-gradient(circle at 20% 50%, rgba(255,255,255,0.3) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(255,255,255,0.2) 0%, transparent 50%),
+    radial-gradient(circle at 60% 80%, rgba(255,255,255,0.15) 0%, transparent 50%);
+}
+
+.banner__content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.banner__icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto var(--space-xl);
+  backdrop-filter: blur(8px);
+}
+
+.banner__title {
+  font-family: var(--font-serif);
+  font-size: clamp(2rem, 4vw, 3.25rem);
+  font-weight: 700;
+  line-height: 1.15;
+  margin-bottom: var(--space-lg);
+}
+
+.banner__title em {
+  font-style: italic;
+  opacity: 0.9;
+}
+
+.banner__text {
+  font-size: 1.125rem;
+  opacity: 0.8;
+  line-height: 1.7;
+  margin-bottom: var(--space-2xl);
+}
+
+.banner__actions {
+  display: flex;
+  gap: var(--space-md);
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* ---- About Preview Section ---- */
+.about-preview {
+  position: relative;
+  overflow: hidden;
+}
+
+.about-preview__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-4xl);
+  align-items: center;
+}
+
+.about-preview__image-wrapper {
+  position: relative;
+}
+
+.about-preview__image {
+  border-radius: var(--radius-lg);
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  box-shadow: var(--shadow-xl);
+}
+
+.about-preview__image-accent {
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+  width: 200px;
+  height: 200px;
+  border-radius: var(--radius-lg);
+  background: var(--color-accent);
+  opacity: 0.1;
+  z-index: -1;
+}
+
+.about-preview__badge {
+  position: absolute;
+  bottom: var(--space-xl);
+  right: var(--space-xl);
+  background: white;
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg);
+  box-shadow: var(--shadow-lg);
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+.about-preview__badge-number {
+  font-family: var(--font-serif);
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--color-accent);
+  line-height: 1;
+}
+
+.about-preview__badge-text {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--color-neutral-600);
+  line-height: 1.3;
+}
+
+.about-preview__content {
+  padding: var(--space-xl) 0;
+}
+
+.about-preview__label {
+  display: inline-block;
+  margin-bottom: var(--space-md);
+}
+
+.about-preview__title {
+  margin-bottom: var(--space-lg);
+}
+
+.about-preview__text {
+  margin-bottom: var(--space-xl);
+}
+
+.about-preview__features {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  margin-bottom: var(--space-2xl);
+}
+
+.about-preview__feature {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+.about-preview__feature-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(26, 171, 184, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-accent);
+  flex-shrink: 0;
+}
+
+.about-preview__feature-text {
+  font-size: 0.9375rem;
+  color: var(--color-neutral-700);
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .about-preview__grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-2xl);
+  }
+
+  .about-preview__image {
+    height: 350px;
+  }
+
+  .about-preview__badge {
+    bottom: var(--space-md);
+    right: var(--space-md);
+    padding: var(--space-md);
+  }
+
+  .about-preview__badge-number {
+    font-size: 1.75rem;
+  }
+}

@@ -1,0 +1,209 @@
+/* ---- Navbar ---- */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(250, 250, 250, 0.92);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  height: var(--header-height);
+  transition: all var(--transition-base);
+}
+
+.navbar.scrolled {
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.08);
+}
+
+.navbar__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--space-xl);
+}
+
+/* Logo */
+.navbar__logo {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  text-decoration: none;
+  z-index: 1001;
+}
+
+.navbar__logo-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: var(--color-gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform var(--transition-spring);
+}
+
+.navbar__logo:hover .navbar__logo-icon {
+  transform: scale(1.05);
+}
+
+.navbar__logo-text {
+  font-family: var(--font-serif);
+  font-size: 1.625rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  letter-spacing: -0.01em;
+}
+
+.navbar__logo-text span {
+  color: var(--color-accent);
+}
+
+/* Navigation Links */
+.navbar__links {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2xl);
+}
+
+.navbar__link {
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: var(--color-neutral-700);
+  transition: color var(--transition-fast);
+  position: relative;
+  padding: var(--space-xs) 0;
+}
+
+.navbar__link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--color-accent);
+  transition: width var(--transition-base);
+  border-radius: var(--radius-full);
+}
+
+.navbar__link:hover,
+.navbar__link.active {
+  color: var(--color-primary);
+}
+
+.navbar__link:hover::after,
+.navbar__link.active::after {
+  width: 100%;
+}
+
+/* Actions */
+.navbar__actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+.navbar__whatsapp {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  color: #25D366;
+  font-weight: 600;
+  font-size: 0.875rem;
+  transition: opacity var(--transition-fast);
+}
+
+.navbar__whatsapp:hover {
+  opacity: 0.8;
+}
+
+.navbar__cta-btn {
+  composes: btn btn-primary btn-sm from global;
+}
+
+/* Mobile Menu Toggle */
+.navbar__toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  padding: var(--space-sm);
+  z-index: 1001;
+  cursor: pointer;
+}
+
+.navbar__toggle-line {
+  width: 24px;
+  height: 2px;
+  background: var(--color-primary);
+  border-radius: var(--radius-full);
+  transition: all var(--transition-base);
+  transform-origin: center;
+}
+
+.navbar__toggle.open .navbar__toggle-line:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.navbar__toggle.open .navbar__toggle-line:nth-child(2) {
+  opacity: 0;
+  transform: scaleX(0);
+}
+
+.navbar__toggle.open .navbar__toggle-line:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* Mobile Menu */
+.navbar__mobile-menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(250, 250, 250, 0.98);
+  backdrop-filter: blur(20px);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2xl);
+  z-index: 1000;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--transition-base);
+}
+
+.navbar__mobile-menu.open {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.navbar__mobile-link {
+  font-family: var(--font-serif);
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  transition: color var(--transition-fast);
+}
+
+.navbar__mobile-link:hover {
+  color: var(--color-accent);
+}
+
+@media (max-width: 768px) {
+  .navbar__links,
+  .navbar__actions {
+    display: none;
+  }
+
+  .navbar__toggle {
+    display: flex;
+  }
+
+  .navbar__mobile-menu {
+    display: flex;
+  }
+}
